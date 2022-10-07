@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lista de veículos</title>
+</head>
+<body class="bg-neutral-800">  
+ <main class="w-10/12 m-auto">
+    <div class="flex justify-between mt-2 align-middle">
+        <h1 class="text-2xl text-white">Lista de veículos</h1>   
+        <a href="" class="p-2 rounded-lg bg-green-500 text-white"><i class="fa-solid fa-plus"></i> Adicionar</a>
+    </div>
+    <table class="table-auto w-full bg-neutral-200 mt-2 text-center  border-spacing-0">
+        <thead>
+            <tr class="bg-neutral-400 ">
+                <th class="p-2">Modelo</th>
+                <th class="p-2">Montadora</th>
+                <th class="p-2">Ano Modelo/ Ano Fabricação</th>
+                <th class="p-2">Categoria de veículo</th>
+                <th class="p-2">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTable">
+            
+        </tbody>
+    </table>
+    <div class="fixed h-screen w-full z-40 bg-black/50 top-0 left-0 text-white flex justify-center items-center" id="loading">
+        <span  class=" text-center">
+            <i class="fa-solid fa-spinner block animate-spin text-2xl "></i>
+            <span class="">Carregando dados...</span> 
+        </span>
+    </div>
+ </main>
+ <script src="scripts/principal.js"></script>
+</body>
+</html>
